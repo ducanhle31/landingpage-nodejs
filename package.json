@@ -7,7 +7,7 @@
     "start": "webpack serve --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
-  "author": "Robin Huy",
+  "author": "Duc anh ",
   "license": "ISC",
   "dependencies": {
     "@glidejs/glide": "^3.6.0",
