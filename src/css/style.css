@@ -650,9 +650,9 @@ swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-
+flex-direction: column;
     width: 100px;
-      height: 100px;
+      height: 200px;
 }
 
 
@@ -662,6 +662,7 @@ swiper-slide img {text-align: center;
   width: 100px;
   height: 100px;
   object-fit: fill;
+  padding-bottom: 30px;
 }
 
 .content_details-img {

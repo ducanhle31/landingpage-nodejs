@@ -177,17 +177,25 @@
     <h2 class="content_header">Bảo trợ việc làm</h2>
     <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="10" loop="true"
       autoplay-delay="1000" autoplay-disable-on-interaction="false" slides-per-view="4">
-      <swiper-slide><img data-src="img/bt/bravebits 1.png" alt="amazon web service"
+      <swiper-slide>
+        <img data-src="img/bt/bravebits 1.png" alt="amazon web service"
+          class="lazyload lazyload-img" />
+  </swiper-slide>
+      <swiper-slide>
+        <img data-src="img/bt/codetot 1.png" alt="amazon web service"
+          class="lazyload lazyload-img" />
+        </swiper-slide>
+      <swiper-slide>
+        <img data-src="img/bt/hyperlogy 1.png" alt="amazon web service"
           class="lazyload lazyload-img" /></swiper-slide>
-      <swiper-slide><img data-src="img/bt/codetot 1.png" alt="amazon web service"
+      <swiper-slide>
+        <img data-src="img/bt/logo-header 1.png" alt="amazon web service"
           class="lazyload lazyload-img" /></swiper-slide>
-      <swiper-slide><img data-src="img/bt/hyperlogy 1.png" alt="amazon web service"
+      <swiper-slide>
+        <img data-src="img/bt/logo-kvit-2023 1.png" alt="amazon web service"
           class="lazyload lazyload-img" /></swiper-slide>
-      <swiper-slide><img data-src="img/bt/logo-header 1.png" alt="amazon web service"
-          class="lazyload lazyload-img" /></swiper-slide>
-      <swiper-slide><img data-src="img/bt/logo-kvit-2023 1.png" alt="amazon web service"
-          class="lazyload lazyload-img" /></swiper-slide>
-      <swiper-slide><img data-src="img/bt/smart-osc 1.png" alt="amazon web service"
+      <swiper-slide>
+        <img data-src="img/bt/smart-osc 1.png" alt="amazon web service"
           class="lazyload lazyload-img" /></swiper-slide>
 
     </swiper-container>
@@ -196,69 +204,6 @@
 
   </div>
 
-<div>
-
-<div class="logo-slider">
-  <img data-src="img/bt/logo-kvit-2023 1.png" alt="amazon web service" class="lazyload lazyload-img" />
-  <img data-src="img/bt/logo-kvit-2023 1.png" alt="amazon web service"
-          class="lazyload lazyload-img" />
-          <img data-src="img/bt/logo-kvit-2023 1.png" alt="amazon web service"
-          class="lazyload lazyload-img" />
-          <img data-src="img/bt/logo-kvit-2023 1.png" alt="amazon web service" class="lazyload lazyload-img" />
-          <img data-src="img/bt/logo-kvit-2023 1.png" alt="amazon web service"
-          class="lazyload lazyload-img" />
-          <img data-src="img/bt/logo-kvit-2023 1.png" alt="amazon web service" class="lazyload lazyload-img" />
-
-</div>
-
-<style>
-  .logo-slider {
-  width: 300px; /* Điều chỉnh kích thước slider theo ý muốn */
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.logo-slider img {
-  width: 100px; /* Điều chỉnh kích thước logo theo ý muốn */
-  margin-right: 10px; /* Khoảng cách giữa các logo */
-}
-
-</style>
-<script>
-  // Lấy danh sách các logo và container của slider
-  const logoSlider = document.querySelector('.logo-slider');
-  const logos = logoSlider.querySelectorAll('img');
-
-  // Sao chép các logo đầu tiên và thêm vào cuối danh sách
-  const firstLogo = logos[0].cloneNode(true);
-  logoSlider.appendChild(firstLogo);
-
-  let currentIdx = 0;
-  const logoCount = logos.length;
-
-  // Hàm để chạy slider tự động
-  function runSlider() {
-    currentIdx++;
-    if (currentIdx >= logoCount) {
-      // Nếu đạt đến cuối danh sách, quay lại logo đầu tiên
-      logoSlider.style.transition = 'none'; // Tắt hiệu ứng chuyển động để trở về logo đầu tiên mà không bị nhìn thấy
-      logoSlider.style.transform = 'translateX(0)'; // Di chuyển về logo đầu tiên
-      setTimeout(() => {
-        logoSlider.style.transition = 'transform 0.5s ease-in-out'; // Bật lại hiệu ứng chuyển động sau khi đã quay lại logo đầu tiên
-        currentIdx = 1; // Cập nhật lại chỉ số hiện tại để bắt đầu chạy từ logo thứ hai
-      }, 10);
-    } else {
-      logoSlider.style.transform = `translateX(-${currentIdx * 110}px)`; // Di chuyển slider đến logo tiếp theo
-    }
-  }
-
-  // Thực hiện chạy slider tự động mỗi 2 giây (hoặc thời gian mong muốn)
-  setInterval(runSlider, 2000);
-</script>
-
-
-
-</div>
 
 
 
