@@ -181,7 +181,7 @@ document.getElementById("btn-register").addEventListener("click", function (e) {
         phone.classList.remove("valid");
         email.classList.remove("valid");
         toggleModal();
-      
+
       },
       error: function (result) {
         console.error(result);
@@ -189,11 +189,6 @@ document.getElementById("btn-register").addEventListener("click", function (e) {
     });
   }
 });
-
-
-
-
-
 
 
 

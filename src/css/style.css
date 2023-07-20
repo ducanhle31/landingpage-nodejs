@@ -305,7 +305,7 @@ a {
   margin-top: 50px;
   width: 42%;
   box-sizing: border-box;
-  padding-left: 100px;
+  padding-left: 10px;
 
 }
 
@@ -650,16 +650,17 @@ swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-flex-direction: column;
-    width: 100px;
-      height: 200px;
+  flex-direction: column;
+  width: 100px;
+  height: 200px;
 }
 
 
-swiper-slide img {text-align: center;
+swiper-slide img {
+  text-align: center;
   align-items: center;
   display: block;
-  width: 100px;
+  width: 150px;
   height: 100px;
   object-fit: fill;
   padding-bottom: 30px;
@@ -2100,21 +2101,21 @@ body.preventScroll {
 /*  */
 .backToTopBtn {
   position: fixed;
-    right: 25px;
-    bottom: 100px;
-    z-index: 100;
-    width: 50px;
-    overflow: hidden;
-    border-radius: 50%;
-border:1px solid transparent;
+  right: 25px;
+  bottom: 100px;
+  z-index: 100;
+  width: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid transparent;
   box-shadow: 0 3px 12px rgba(0, 0, 0, .15);
-color: #126ffb;
+  color: #126ffb;
   padding: 8px 10px;
   font-size: 22px;
-background: #fa752e8d;
-text-align: center;
+  background: #fa752e8d;
+  text-align: center;
   align-items: center;
-font-weight: 600;
+  font-weight: 600;
 
 }
 
@@ -2217,7 +2218,7 @@ font-weight: 600;
 .blog_container .blog .content .title {
   width: 100%;
   font-family: "Open Sans", sans-serif;
-  
+
   font-weight: 600;
   text-transform: none;
   font-size: 20px;
@@ -2367,7 +2368,3 @@ font-weight: 600;
     padding: 12px;
   }
 }
-
-
-
-
